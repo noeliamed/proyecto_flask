@@ -34,7 +34,13 @@ Vamos a crear una aplicación web a partir de un fichero json (podéis utilizar 
     
 Hasta aquí es suficiente para sacar la mitad de los puntos que vale la práctica. Te propongo varias mejoras que irán sumando puntos al resultados final, tienes que hacerlas en orden y puede hacer las que quieras.
 
-    1. Realizar la búsqueda utilizando una sola ruta: Es decir que en la página /xxxs este el formulario de búsqueda y la lista de xxxs seleccionado. La información del formulario se enviará a la misma página. No existirá la página /listaxxxs.
-    2. Como el protocolo HTTP no tiene estado, no es capaz de acordarse de los datos anteriores, por lo tanto cada vez que hagáis una búsqueda aparecerá la lista de xxxs pero el formulario estará vacío, no recuerda lo que pusimos. Modifica el programa para que aparezca en el formulario la cadena que habías introducido en la búsqueda (Pista: tendrá que utilizar el atributo value del elemento input).
-    3. Añade otro criterio de búsqueda. Para buscar por ese segundo criterio vas a generar dinámicamente una lista desplegable (elemento select) en el formulario con las valores de los xxx). 
-    4. De la misma forma que en el apartado 1 programar la lista desplegable para que recuerde la opción elegida en la búsqueda. (Pista: Usar el atributo selected del elemento option del elemento select)
+    1. Realizar la búsqueda utilizando una sola ruta: Es decir que en la página /xxxs este el formulario 
+    de búsqueda y la lista de xxxs seleccionado. La información del formulario se enviará a la misma página. No existirá la página /listaxxxs.
+    2. Como el protocolo HTTP no tiene estado, no es capaz de acordarse de los datos anteriores, por lo
+    tanto cada vez que hagáis una búsqueda aparecerá la lista de xxxs pero el formulario estará vacío, no 
+    recuerda lo que pusimos. Modifica el programa para que aparezca en el formulario la cadena que habías introducido 
+    en la búsqueda (Pista: tendrá que utilizar el atributo value del elemento input).
+    3. Añade otro criterio de búsqueda. Para buscar por ese segundo criterio vas a generar dinámicamente una lista 
+    desplegable (elemento select) en el formulario con las valores de los xxx). 
+    4. De la misma forma que en el apartado 1 programar la lista desplegable para que recuerde la opción elegida en la 
+    búsqueda. (Pista: Usar el atributo selected del elemento option del elemento select)
