@@ -6,9 +6,11 @@ Vamos a crear una aplicación web a partir de un fichero json (podéis utilizar 
 
     • La aplicación debe tener una hoja de estilo. Para ello lo mejor es 
     que busques una plantilla HTML/CSS.
+    
     • Las plantillas que uses en la aplicación se heredarán de la plantilla 
     base.html (esta plantilla la puedes crear a partir de la plantilla HTML que has buscado).
     • La plantilla base tendrá al menos dos bloques: uno para indicar el 
+    
     título y otro para poner el contenido.
     • La página principal tendrá una imagen con el logotipo al pulsar sobre 
     está imagen nos llevará a una página /xxxs.
