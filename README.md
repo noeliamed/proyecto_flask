@@ -3,6 +3,7 @@
 ## ENUNCIADO 
 
 Vamos a crear una aplicación web a partir de un fichero json (podéis utilizar el mismo que empleásteis en vuestro proyecto) con las siguientes características:
+
     • La aplicación debe tener una hoja de estilo. Para ello lo mejor es que busques una plantilla HTML/CSS.
     • Las plantillas que uses en la aplicación se heredarán de la plantilla base.html (esta plantilla la puedes crear a partir de la plantilla HTML que has buscado).
     • La plantilla base tendrá al menos dos bloques: uno para indicar el título y otro para poner el contenido.
@@ -13,6 +14,7 @@ Vamos a crear una aplicación web a partir de un fichero json (podéis utilizar 
     • La tabla tendrá al menos tres columnas: en la primera aparecerá el nombre, en la segunda otra información relevante y en la tercera habrá un enlace con la palabra “Detalle” que me llevará a la página del xxx con la ruta /xxx/<identificador> o /xxx?id=xxxxxxxxxx.
     • Como ves, estamos volviendo a hacer el patrón de diseño : Lista - detalle. La lista está en la página /listaxxx y el detalle está en la página /xxx/<identificador> o /xxx?id=xxxxxxx donde aparecerán todos los datos del xxx que tenga ese identificador. Si el identificador no existe devolverá un 404. Tendrá un enlace que me devuelve a la página /xxxs.
     • Teneís que buscar una Plataforma como Servicio (PaaS) basada en la nube que sea gratuita (Railway, Dokku,,..).y desplegar vuestra aplicación en ella. Debéis indicar el proceso de despliege en la misma.
+    
 Hasta aquí es suficiente para sacar la mitad de los puntos que vale la práctica. Te propongo varias mejoras que irán sumando puntos al resultados final, tienes que hacerlas en orden y puede hacer las que quieras.
     1. Realizar la búsqueda utilizando una sola ruta: Es decir que en la página /xxxs este el formulario de búsqueda y la lista de xxxs seleccionado. La información del formulario se enviará a la misma página. No existirá la página /listaxxxs.
     2. Como el protocolo HTTP no tiene estado, no es capaz de acordarse de los datos anteriores, por lo tanto cada vez que hagáis una búsqueda aparecerá la lista de xxxs pero el formulario estará vacío, no recuerda lo que pusimos. Modifica el programa para que aparezca en el formulario la cadena que habías introducido en la búsqueda (Pista: tendrá que utilizar el atributo value del elemento input).
