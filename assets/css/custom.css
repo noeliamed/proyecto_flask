@@ -1,3 +1,23 @@
 /*
 Custom Css
 */
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+.bg-overlay {
+    background-color: rgba(255, 255, 255, 0.7); /* Blanco semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Opcional: sombra sutil */
+}
