@@ -10,38 +10,49 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/uno.css">
     <link rel="stylesheet" href="assets/css/custom.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    
+
+
+
 </head> 
 
-        <!-- Letras y Logotipo -->
+    <body> 
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="assets/img/video.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+        <!-- Start Banner Hero -->
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-5 order-lg-last">
                             <a class="navbar-brand text-success logo h1 align-self-center" href="buscador.html"> 
-                            <img class="img-fluid" src="./assets/img/favicon.png" alt="">
+                                <img class="img-fluid" src="./assets/img/favicon.png" alt="">
                             </a>
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left align-self-center">
+                            <!-- ✅ Aquí se añade la clase bg-overlay -->
+                            <div class="text-align-left align-self-center bg-overlay">
                                 <h1 class="h1 text-success"><b>PELÍCULAS</b> </h1>
                                 <h3 class="h2">Toda la información que necesitas de tus películas favoritas</h3>
                                 <p>
-                                    ¡HAZ CLIC EN EN LOGOTIPO PARA REALIZAR
+                                    ¡HAZ CLIC EN EL LOGOTIPO PARA REALIZAR
                                     TU PRIMERA BÚSQUEDA!
                                 </p>
                             </div>
+                            <!-- ⬆️ Fin del cambio -->
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Fin de las Letras y Logotipo -->
+        </div>
+        </body>
 
-            
+
