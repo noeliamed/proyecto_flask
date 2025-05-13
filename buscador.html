@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <title>BUSCADOR</title>
@@ -12,25 +12,42 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/uno.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Archivo CSS principal -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/estilos2.css">
 
-    <!-- Load fonts style after rendering the layout styles -->
+    <!-- Fuentes -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/estilos2.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Fuente Orbitron -->
-
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="search-wrapper">
         <div class="search-box">
-            <h1>🎬 Busca tu película</h1>
-            <form action="/listaxxxs" method="POST">
-                <input type="text" name="nombre" placeholder="Escribe el nombre de la película..." required>
-                <button type="submit">BUSCAR</button>
+            <h1>🎬 Buscador de peliculas </h1>
+            <!-- Formulario de búsqueda con método POST que envía a /listas -->
+            <form action="/listas" method="POST" id="buscadorPeliculas">
+                <input type="text" 
+                       name="nombre" 
+                       id="nombrePelicula"
+                       placeholder="Escribe el nombre de la película..." 
+                       required
+                       aria-label="Nombre de la película a buscar">
+                <button type="submit" class="btn-buscar">BUSCAR</button>
             </form>
         </div>
     </div>
+
+    <!-- Validación adicional del formulario -->
+    <script>
+        document.getElementById('buscadorPeliculas').addEventListener('submit', function(e) {
+            const input = document.getElementById('nombrePelicula');
+            if(input.value.trim() === '') {
+                e.preventDefault();
+                input.focus();
+                alert('Por favor ingresa el nombre de una película');
+            }
+        });
+    </script>
 </body>
 </html>
