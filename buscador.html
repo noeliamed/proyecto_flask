@@ -1,83 +1,36 @@
-/* Fondo estilo cine */
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* Contenedor centrado */
-.search-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
+<head>
+    <title>BUSCADOR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-/* Caja con efecto “wow” */
-.search-box {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 40px;
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
-    max-width: 500px;
-    width: 90%;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png">
 
-/* Título estilo cine */
-.search-box h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 28px;
-    color: #00ffcc;
-    margin-bottom: 25px;
-    text-shadow: 0 0 10px #00ffcc;
-}
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/uno.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Archivo CSS principal -->
 
-/* Input de búsqueda */
-.search-box input[type="text"] {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    outline: none;
-    transition: 0.3s;
-}
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/estilos2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Fuente Orbitron -->
 
-.search-box input[type="text"]::placeholder {
-    color: #ccc;
-}
+</head>
 
-.search-box input[type="text"]:focus {
-    background: rgba(255, 255, 255, 0.3);
-}
-
-/* Botón neon */
-.search-box button {
-    padding: 15px 30px;
-    font-size: 16px;
-    background: #00ffcc;
-    color: #000;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
-    transition: background 0.3s, transform 0.2s;
-}
-
-.search-box button:hover {
-    background: #00e6b8;
-    transform: scale(1.05);
-}
+<body>
+    <div class="search-wrapper">
+        <div class="search-box">
+            <h1>🎬 Busca tu película</h1>
+            <form action="/listaxxxs" method="POST">
+                <input type="text" name="nombre" placeholder="Escribe el nombre de la película..." required>
+                <button type="submit">BUSCAR</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
