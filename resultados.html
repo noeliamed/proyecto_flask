@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>RESULTADOS DE BÚSQUEDA</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="apple-touch-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png">
+    
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/uno.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/estilos3.css">
+    
+        <!-- Fuentes -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="search-wrapper">
+        <div class="search-box">
+            <h1>🎬 Resultados para: "{{ busqueda }}"</h1>
+            
+            <!-- Botón para volver -->
+            <a href="{{ url_for('buscador') }}" class="btn-volver">← Volver al buscador</a>
+            
+            <!-- Lista de resultados -->
+            <div class="resultados-container">
+                {% if resultados %}
+                    {% for pelicula in resultados %}
+                    <div class="pelicula-encontrada">
+                        <h2>{{ pelicula.titulo }}</h2>
+                        <p><strong>Año:</strong> {{ pelicula.anio }}</p>
+                        <p><strong>Director:</strong> {{ pelicula.director }}</p>
+                        <p><strong>Género:</strong> {{ pelicula.genero }}</p>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <p class="sin-resultados">No se encontraron películas</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
