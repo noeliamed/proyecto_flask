@@ -1,54 +1,51 @@
-<!DOCTYPE html>
-<html lang="es">
+% extends "base.html" %}
 
-<head>
-    <title>BUSCADOR</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" href="/static/assets/img/favicon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="/static/assets/favicon.png">
-
-    <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/assets/css/uno.css">
-    <link rel="stylesheet" href="/static/assets/css/custom.css">
-    <link rel="stylesheet" href="/static/assets/css/styles.css">
-    <link rel="stylesheet" href="/static/assets/css/estilos2.css">
-
-    <!-- Fuentes -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="/static/assets/css/fontawesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="search-wrapper">
-        <div class="search-box">
-            <h1>🎬 Buscador de peliculas </h1>
-            <!-- Formulario de búsqueda con método POST que envía a /listas -->
-            <form action="/resultados" method="POST" id="buscadorPeliculas">
-                <input type="text" 
-                       name="nombre" 
-                       id="nombrePelicula"
-                       placeholder="Escribe el nombre de la película..." 
-                       required
-                       aria-label="Nombre de la película a buscar">
-                <button type="submit" class="btn-buscar">BUSCAR</button>
-            </form>
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-white mb-4">Buscar Películas</h2>
+    
+    <form method="POST" class="mb-5">
+        <div class="row">
+            <div class="col-md-8 mb-3">
+                <input type="text" class="form-control" name="nombre" 
+                       placeholder="Buscar por título..." value="{{ busqueda }}">
+            </div>
+            <div class="col-md-4 mb-3">
+                <select class="form-control" name="genero">
+                    <option value="">Todos los géneros</option>
+                    {% for genero in generos %}
+                    <option value="{{ genero }}" 
+                            {% if genero == genero_seleccionado %}selected{% endif %}>
+                        {{ genero }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
         </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+
+    {% if peliculas %}
+    <div class="row">
+        {% for pelicula in peliculas %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">{{ pelicula.titulo }} ({{ pelicula.anio }})</h5>
+                    <p class="card-text">
+                        <strong>Género:</strong> {{ pelicula.genero|join(', ') }}<br>
+                        <strong>Director:</strong> {{ pelicula.director }}
+                    </p>
+                    <a href="{{ url_for('detalle', id=pelicula.id) }}" class="btn btn-info">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
-
-    <!-- Validación adicional del formulario -->
-    <script>
-        document.getElementById('buscadorPeliculas').addEventListener('submit', function(e) {
-            const input = document.getElementById('nombrePelicula');
-            if(input.value.trim() === '') {
-                e.preventDefault();
-                input.focus();
-                alert('Por favor ingresa el nombre de una película');
-            }
-        });
-    </script>
-</body>
-</html>
-
+    {% elif request.method == 'POST' %}
+    <div class="alert alert-warning">
+        No se encontraron películas con esos criterios de búsqueda.
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
