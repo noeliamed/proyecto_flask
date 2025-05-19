@@ -1,0 +1,418 @@
+{
+    "peliculas": [
+        {
+            "titulo": "Inception",
+            "anio": 2010,
+            "genero": ["Ciencia Ficción", "Acción"],
+            "director": {
+                "nombre": "Christopher Nolan",
+                "nacionalidad": "Británico"
+            },
+            "duracion": 148,
+            "actores": [
+                {"nombre": "Leonardo DiCaprio", "personaje": "Dom Cobb"},
+                {"nombre": "Joseph Gordon-Levitt", "personaje": "Arthur"},
+                {"nombre": "Elliot Page", "personaje": "Ariadne"}
+            ],
+            "sinopsis": "Un ladrón que roba secretos corporativos a través del uso de la tecnología de los sueños es ofrecido una oportunidad para borrar su pasado criminal.",
+            "calificacion": 8.8,
+            "presupuesto": 160000000,
+            "ingresos": 836836967,
+            "premios": {
+                "Oscar": 4,
+                "Nominaciones": 8
+            }
+        },
+        {
+            "titulo": "The Shawshank Redemption",
+            "anio": 1994,
+            "genero": ["Drama"],
+            "director": {
+                "nombre": "Frank Darabont",
+                "nacionalidad": "Americano"
+            },
+            "duracion": 142,
+            "actores": [
+                {"nombre": "Tim Robbins", "personaje": "Andy Dufresne"},
+                {"nombre": "Morgan Freeman", "personaje": "Ellis 'Red' Redding"},
+                {"nombre": "Bob Gunton", "personaje": "Warden Norton"}
+            ],
+            "sinopsis": "Dos hombres se forman una amistad mientras cumplen condena en una prisión de máxima seguridad.",
+            "calificacion": 9.3,
+            "presupuesto": 25000000,
+            "ingresos": 58600000,
+            "premios": {
+                "Oscar": 0,
+                "Nominaciones": 7
+            }
+        },
+        {
+            "titulo": "The Godfather",
+            "anio": 1972,
+            "genero": ["Crimen", "Drama"],
+            "director": {
+                "nombre": "Francis Ford Coppola",
+                "nacionalidad": "Americano"
+            },
+            "duracion": 175,
+            "actores": [
+                {"nombre": "Marlon Brando", "personaje": "Don Vito Corleone"},
+                {"nombre": "Al Pacino", "personaje": "Michael Corleone"},
+                {"nombre": "James Caan", "personaje": "Sonny Corleone"}
+            ],
+            "sinopsis": "La historia de la familia Corleone y su imperio criminal en Nueva York.",
+            "calificacion": 9.2,
+            "presupuesto": 6000000,
+            "ingresos": 246120000,
+            "premios": {
+                "Oscar": 3,
+                "Nominaciones": 9
+            }
+        },
+        {
+            "titulo": "Pulp Fiction",
+            "anio": 1994,
+            "genero": ["Crimen", "Drama"],
+            "director": {
+                "nombre": "Quentin Tarantino",
+                "nacionalidad": "Americano"
+            },
+            "duracion": 154,
+            "actores": [
+                {"nombre": "John Travolta", "personaje": "Vincent Vega"},
+                {"nombre": "Uma Thurman", "personaje": "Mia Wallace"},
+                {"nombre": "Samuel L. Jackson", "personaje": "Jules Winnfield"}
+            ],
+            "sinopsis": "Las vidas de dos asesinos a sueldo, un boxeador, la esposa de un gánster y un par de criminales se entrelazan en una serie de historias de crimen.",
+            "calificacion": 8.9,
+            "presupuesto": 8000000,
+            "ingresos": 214179000,
+            "premios": {
+                "Oscar": 1,
+                "Nominaciones": 7
+            }
+        },
+        {
+            "titulo": "The Dark Knight",
+            "anio": 2008,
+            "genero": ["Acción", "Crimen", "Drama"],
+            "director": {
+                "nombre": "Christopher Nolan",
+                "nacionalidad": "Británico"
+            },
+            "duracion": 152,
+            "actores": [
+                {"nombre": "Christian Bale", "personaje": "Bruce Wayne / Batman"},
+                {"nombre": "Heath Ledger", "personaje": "Joker"},
+                {"nombre": "Aaron Eckhart", "personaje": "Harvey Dent"}
+            ],
+            "sinopsis": "Batman, con la ayuda del teniente Jim Gordon y el fiscal de distrito Harvey Dent, intenta desmantelar las organizaciones criminales que plagan Gotham.",
+            "calificacion": 9.0,
+            "presupuesto": 185000000,
+            "ingresos": 1004558444,
+            "premios": {
+                "Oscar": 2,
+                "Nominaciones": 8
+            }
+        },
+        {
+            "titulo": "Forrest Gump",
+            "anio": 1994,
+            "genero": ["Drama", "Romance"],
+            "director": {
+                "nombre": "Robert Zemeckis",
+                "nacionalidad": "Americano"
+            },
+            "duracion": 142,
+            "actores": [
+                {"nombre": "Tom Hanks", "personaje": "Forrest Gump"},
+                {"nombre": "Robin Wright", "personaje": "Jenny Curran"},
+                {"nombre": "Gary Sinise", "personaje": "Teniente Dan Taylor"}
+            ],
+            "sinopsis": "La vida de un hombre con un coeficiente intelectual bajo que se convierte en testigo de eventos históricos mientras busca a su amor de la infancia.",
+            "calificacion": 8.8,
+            "presupuesto": 55000000,
+            "ingresos": 678226000,
+            "premios": {
+                "Oscar": 6,
+                "Nominaciones": 13
+            }
+        },
+        {
+            "titulo": "The Matrix",
+            "anio": 1999,
+            "genero": ["Ciencia Ficción", "Acción"],
+            "director": {
+                "nombre": "Lana Wachowski, Lilly Wachowski",
+                "nacionalidad": "Americano"
+            },
+            "duracion": 136,
+            "actores": [
+                {"nombre": "Keanu Reeves", "personaje": "Neo"},
+                {"nombre": "Laurence Fishburne", "personaje": "Morpheus"},
+                {"nombre": "Carrie-Anne Moss", "personaje": "Trinity"}
+            ],
+            "sinopsis": "Un hacker descubre la verdad sobre su realidad y su papel en la guerra contra sus opresores.",
+            "calificacion": 8.7,
+            "presupuesto": 63000000,
+            "ingresos": 463517383,
+            "premios": {
+                "Oscar": 4,
+                "Nominaciones": 10
+            }
+        },
+        {
+            "titulo": "Fight Club",
+            "anio": 1999,
+            "genero": ["Drama", "Thriller"],
+            "director": {
+                "nombre": "David Fincher",
+                "nacionalidad": "Americano"
+            },
+            "duracion": 139,
+            "actores": [
+                {"nombre": "Brad Pitt", "personaje": "Tyler Durden"},
+                {"nombre": "Edward Norton", "personaje": "El Narrador"},
+                {"nombre": "Helena Bonham Carter", "personaje": "Marla Singer"}
+            ],
+            "sinopsis": "Un hombre insatisfecho con su vida se une a un club de lucha clandestino como una forma de escapar de su rutina.",
+            "calificacion": 8.8,
+            "presupuesto": 63000000,
+            "ingresos": 100853753,
+            "premios": {
+                "Oscar": 0,
+                "Nominaciones": 1
+            }
+        },
+        {
+            "titulo": "The Lord of the Rings: The Return of the King",
+            "anio": 2003,
+            "genero": ["Fantasía", "Aventura"],
+            "director": {
+                "nombre": "Peter Jackson",
+                "nacionalidad": "Neozelandés"
+            },
+            "duracion": 201,
+            "actores": [
+                {"nombre": "Elijah Wood", "personaje": "Frodo Baggins"},
+                {"nombre": "Viggo Mortensen", "personaje": "Aragorn"},
+                {"nombre": "Ian McKellen", "personaje": "Gandalf"}
+            ],
+            "sinopsis": "La última parte de la trilogía que sigue la lucha por destruir el Anillo Único y la batalla por la Tierra Media.",
+            "calificacion": 9.0,
+            "presupuesto": 94000000,
+            "ingresos": 1119929521,
+            "premios": {
+                "Oscar": 11,
+                "Nominaciones": 11
+            }
+        },
+        {
+            "titulo": "Interstellar",
+            "anio": 2014,
+            "genero": ["Ciencia Ficción", "Drama"],
+            "director": {
+                "nombre": "Christopher Nolan",
+                "nacionalidad": "Británico"
+            },
+            "duracion": 169,
+            "actores": [
+                {"nombre": "Matthew McConaughey", "personaje": "Cooper"},
+                {"nombre": "Anne Hathaway", "personaje": "Brand"},
+                {"nombre": "Jessica Chastain", "personaje": "Murph"}
+            ],
+            "sinopsis": "Un grupo de exploradores viaja a través de un agujero de gusano en busca de un nuevo hogar para la humanidad.",
+            "calificacion": 8.6,
+            "presupuesto": 165000000,
+            "ingresos": 677471339,
+            "premios": {
+                "Oscar": 1,
+                "Nominaciones": 5
+            }
+        },
+        {
+            "titulo": "Gladiator",
+            "anio": 2000,
+            "genero": ["Acción", "Aventura", "Drama"],
+            "director": {
+                "nombre": "Ridley Scott",
+                "nacionalidad": "Británico"
+            },
+            "duracion": 155,
+            "actores": [
+                {"nombre": "Russell Crowe", "personaje": "Maximus"},
+                {"nombre": "Joaquin Phoenix", "personaje": "Commodus"},
+                {"nombre": "Connie Nielsen", "personaje": "Lucilla"}
+            ],
+            "sinopsis": "Un general romano es traicionado y reducido a la esclavitud, y busca venganza contra el emperador que asesinó a su familia.",
+            "cal ificación": 8.5,
+            "presupuesto": 103000000,
+            "ingresos": 457577636,
+            "premios": {
+                "Oscar": 5,
+                "Nominaciones": 12
+            }
+        },
+        {
+            "titulo": "The Silence of the Lambs",
+            "anio": 1991,
+            "genero": ["Thriller", "Crimen"],
+            "director": {
+                "nombre": "Jonathan Demme",
+                "nacionalidad": "Americano"
+            },
+            "duracion": 118,
+            "actores": [
+                {"nombre": "Jodie Foster", "personaje": "Clarice Starling"},
+                {"nombre": "Anthony Hopkins", "personaje": "Hannibal Lecter"},
+                {"nombre": "Scott Glenn", "personaje": "Jack Crawford"}
+            ],
+            "sinopsis": "Una joven agente del FBI busca la ayuda de un asesino en serie encarcelado para atrapar a otro asesino en serie.",
+            "calificacion": 8.6,
+            "presupuesto": 19000000,
+            "ingresos": 272742922,
+            "premios": {
+                "Oscar": 5,
+                "Nominaciones": 7
+            }
+        },
+        {
+            "titulo": "Saving Private Ryan",
+            "anio": 1998,
+            "genero": ["Guerra", "Drama"],
+            "director": {
+                "nombre": "Steven Spielberg",
+                "nacionalidad": "Americano"
+            },
+            "duracion": 169,
+            "actores": [
+                {"nombre": "Tom Hanks", "personaje": "Capitán Miller"},
+                {"nombre": "Matt Damon", "personaje": "Soldado Ryan"},
+                {"nombre": "Tom Sizemore", "personaje": "Sargento Horvath"}
+            ],
+            "sinopsis": "Un grupo de soldados es enviado a la Francia ocupada por los nazis para rescatar a un paracaidista cuyo hermano ha sido asesinado en combate.",
+            "calificacion": 8.6,
+            "presupuesto": 98000000,
+            "ingresos": 482349603,
+            "premios": {
+                "Oscar": 5,
+                "Nominaciones": 11
+            }
+        },
+        {
+            "titulo": "The Social Network",
+            "anio": 2010,
+            "genero": ["Drama", "Biografía"],
+            "director": {
+                "nombre": "David Fincher",
+                "nacionalidad": "Americano"
+            },
+            "duracion": 120,
+            "actores": [
+                {"nombre": "Jesse Eisenberg", "personaje": "Mark Zuckerberg"},
+                {"nombre": "Andrew Garfield", "personaje": "Eduardo Saverin"},
+                {"nombre": "Justin Timberlake", "personaje": "Sean Parker"}
+            ],
+            "sinopsis": "La historia de la creación de Facebook y las disputas legales que siguieron a su éxito.",
+            "calificacion": 7.7,
+            "presupuesto": 40000000,
+            "ingresos": 224962000,
+            "premios": {
+                "Oscar": 3,
+                "Nominaciones": 8
+            }
+        },
+        {
+            "titulo": "The Lion King",
+            "anio": 1994,
+            "genero": ["Animación", "Aventura"],
+            "director": {
+                "nombre": "Roger Allers, Rob Minkoff",
+                "nacionalidad": "Americano"
+            },
+            "duracion": 88,
+            "actores": [
+                {"nombre": "Matthew Broderick", "personaje": "Simba"},
+                {"nombre": "James Earl Jones", "personaje": "Mufasa"},
+                {"nombre": "Jeremy Irons", "personaje": "Scar"}
+            ],
+            "sinopsis": "Un joven león debe enfrentarse a su pasado y reclamar su lugar en el ciclo de la vida.",
+            "calificacion": 8.5,
+            "presupuesto": 45000000,
+            "ingresos": 968511805,
+            "premios": {
+                "Oscar": 2,
+                "Nominaciones": 4
+            }
+        },
+        {
+            "titulo": "Toy Story",
+            "anio": 1995,
+            "genero": ["Animación", "Aventura"],
+            "director": {
+                "nombre": "John Lasseter",
+                "nacionalidad": "Americano"
+            },
+            "duracion": 81,
+            "actores": [
+                {"nombre": "Tom Hanks", "personaje": "Woody"},
+                {"nombre": "Tim Allen", "personaje": " Buzz Lightyear"},
+                {"nombre": "Don Rickles", "personaje": "Mr. Potato Head"}
+            ],
+            "sinopsis": "Un grupo de juguetes cobra vida cuando no hay humanos alrededor, y Woody, el vaquero, se siente amenazado por la llegada de Buzz Lightyear.",
+            "calificacion": 8.3,
+            "presupuesto": 30000000,
+            "ingresos": 373554033,
+            "premios": {
+                "Oscar": 1,
+                "Nominaciones": 3
+            }
+        },
+        {
+            "titulo": "Jurassic Park",
+            "anio": 1993,
+            "genero": ["Ciencia Ficción", "Aventura"],
+            "director": {
+                "nombre": "Steven Spielberg",
+                "nacionalidad": "Americano"
+            },
+            "duracion": 127,
+            "actores": [
+                {"nombre": "Sam Neill", "personaje": "Dr. Alan Grant"},
+                {"nombre": "Laura Dern", "personaje": "Dr. Ellie Sattler"},
+                {"nombre": "Jeff Goldblum", "personaje": "Dr. Ian Malcolm"}
+            ],
+            "sinopsis": "Un parque temático de dinosaurios se convierte en un escenario de terror cuando los animales escapan de sus recintos.",
+            "calificacion": 8.1,
+            "presupuesto": 63000000,
+            "ingresos": 1074295287,
+            "premios": {
+                "Oscar": 3,
+                "Nominaciones": 3
+            }
+        },
+        {
+            "titulo": "Avatar",
+            "anio": 2009,
+            "genero": ["Ciencia Ficción", "Aventura"],
+            "director": {
+                "nombre": "James Cameron",
+                "nacionalidad": "Canadiense"
+            },
+            "duracion": 162,
+            "actores": [
+                {"nombre": "Sam Worthington", "personaje": "Jake Sully"},
+                {"nombre": "Zoe Saldana", "personaje": "Neytiri"},
+                {"nombre": "Sigourney Weaver", "personaje": "Dr. Grace Augustine"}
+            ],
+            "sinopsis": "En un mundo alienígena, un ex marine se convierte en un avatar para interactuar con los nativos y se ve atrapado en un conflicto entre su gente y los habitantes del planeta.",
+            "calificacion": 7.8,
+            "presupuesto": 237000000,
+            "ingresos": 2787965087,
+            "premios": {
+                "Oscar": 3,
+                "Nominaciones": 9
+            }
+        }
+    ]
+}
