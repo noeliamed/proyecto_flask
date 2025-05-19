@@ -87,11 +87,7 @@ def detalle(id):
         abort(404)
     return render_template("detalle.html", pelicula=pelicula)
 
-@app.template_filter('check_file_exists')
-def check_file_exists(filename):
-    static_folder = app.static_folder
-    file_path = os.path.join(static_folder, filename)
-    return os.path.isfile(file_path)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
