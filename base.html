@@ -1,60 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <title>PELÍCULAS</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" href="/static/assets/img/favicon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="/static/assets/favicon.png">
-
-    <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/assets/css/uno.css">
-    <link rel="stylesheet" href="/static/assets/css/custom.css">
-
-    <!-- Load fonts style after rendering the layout styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="/static/assets/css/fontawesome.min.css">
-
-
-
-</head> 
-
-    <body> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}CineApp{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/estilos.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <link rel="icon" href="{{ url_for('static', filename='assets/img/favicon.png') }}">
+</head>
+<body>
     <video autoplay muted loop playsinline id="bg-video">
-        <source src="/static/assets/img/movieIntro.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
+        <source src="{{ url_for('static', filename='assets/img/movieIntro.mp4') }}" type="video/mp4">
     </video>
 
-     
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-5 order-lg-last">
-                            <a class="navbar-brand text-success logo h1 align-self-center" href="buscador.html"> 
-                                <img class="img-fluid" src="/static/assets/img/favicon.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            
-                            <div class="text-align-left align-self-center bg-overlay">
-                                <h1 class="h1 text-success"><b>PELÍCULAS</b> </h1>
-                                <h3 class="h2">Toda la información que necesitas de tus películas favoritas</h3>
-                                <p>
-                                    ¡HAZ CLIC EN EL LOGOTIPO PARA REALIZAR
-                                    TU PRIMERA BÚSQUEDA!
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </body>
+    <div class="container-fluid">
+        {% block content %}{% endblock %}
+    </div>
 
-
+    <script src="{{ url_for('static', filename='assets/js/bootstrap.min.js') }}"></script>
+</body>
+</html>
+ 
 
 
