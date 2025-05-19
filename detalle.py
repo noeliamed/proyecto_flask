@@ -9,7 +9,7 @@
                     <!-- Sección de imagen simplificada -->
                     <div class="col-md-4">
                         <div class="card-img-container">
-                            <img src="{{ url_for('static', filename='assets/img/peliculas/' + pelicula.id + '.jpg') }}" 
+                            <img src="{{ url_for('static', filename='assets/img/peliculas/' + pelicula.imagen + '.jpg') }}" 
                                  class="card-img"
                                  alt="{{ pelicula.titulo }}"
                                  onerror="this.style.display='none'; document.getElementById('default-poster').style.display='block'">
